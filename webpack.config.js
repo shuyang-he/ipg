@@ -11,7 +11,7 @@ module.exports = {
   entry: path.resolve(__dirname, "./src/index.jsx"),
   devtool: "inline-source-map",
   devServer: {
-    contentBase: "./dist",
+    contentBase: "./public",
     port: PORT,
     historyApiFallback: true,
     proxy: {
@@ -19,7 +19,7 @@ module.exports = {
     },
   },
   resolve: {
-    extensions: [".js", ".jsx", "json"],
+    extensions: [".js", ".jsx"],
   },
   module: {
     rules: [
@@ -39,6 +39,7 @@ module.exports = {
             },
           },
         ],
+        include: path.resolve(__dirname, "./src"),
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -47,6 +48,10 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.json$/,
+        loader: "json-loader",
       },
     ],
   },

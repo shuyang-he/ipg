@@ -1,16 +1,16 @@
 import React from "react";
+import TurnPage from "../TurnPage/TurnPage";
+import prev from "../../images/icon/滑动左.svg";
+import next from "../../images/icon/滑动右.svg";
+import img1 from "../../images/logo/客户好评-google.svg";
 
 const evaluationSection = () => {
   return (
     <div className="container">
       <div id="evaluation-section">
-        <div>
-          <a>
-            <img src="./images/icon/滑动左.svg" />
-          </a>
-        </div>
+        <TurnPage img={prev} />
         <div id="evaluation-content">
-          <img src="./images/logo/客户好评-google.svg" />
+          <img src={img1} />
           <div>
             <p className="g-font g-t3 g-t-dark-black">
               英特利普绝对是谷歌最顶尖的灵活用工合作伙伴，
@@ -21,11 +21,7 @@ const evaluationSection = () => {
             - David Toste, Vendor Program Director - Google Inc
           </p>
         </div>
-        <div>
-          <a>
-            <img src="./images/icon/滑动右.svg" />
-          </a>
-        </div>
+        <TurnPage img={next} />
       </div>
     </div>
   );

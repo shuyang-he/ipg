@@ -1,6 +1,4 @@
 import React from "react";
-import Navigation from "../Navigation/Navigation";
-import SideNavigation from "../SideNavigation/SideNavigation";
 import MessageBoard from "../MessageBoard/MessageBoard";
 import Contact from "../Contact/Contact";
 import Message from "../Message/Message";
@@ -20,15 +18,10 @@ import DatabaseSection from "../DatabaseSection/DatabaseSection";
 import ClientSection from "../ClientSection/ClientSection";
 import EvaluationSection from "../EvaluationSection/EvaluationSection";
 import ComplimentSection from "../ComplimentSection/ComplimentSection";
-import Footer from "../Footer/Footer";
-import NavBanner from "../NavBanner/NavBanner";
 
 const main = () => {
   return (
     <>
-      <Navigation />
-      <SideNavigation />
-      <NavBanner />
       <MessageBoard />
       <Contact />
       <Message />
@@ -57,7 +50,6 @@ const main = () => {
       <ClientSection />
       <EvaluationSection />
       <ComplimentSection />
-      <Footer />
     </>
   );
 };

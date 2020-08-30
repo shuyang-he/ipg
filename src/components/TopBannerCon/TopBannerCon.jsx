@@ -11,7 +11,6 @@ export default () => {
       navigation
       pagination={{ clickable: true }}
       onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
         <TopBanner1 />

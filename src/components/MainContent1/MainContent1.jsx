@@ -1,4 +1,5 @@
 import React from "react";
+import MainLink from "../MainLink/MainLink";
 
 const mainContent1 = () => {
   return (
@@ -7,10 +8,7 @@ const mainContent1 = () => {
         北美最大以及服务最完善的双语综合人力资源服务公司
       </p>
       <div>
-        <a className="main-link">
-          <p className="g-font g-t4 g-t-dark-black">了解更多</p>
-          <img src="./images/icon/箭头.svg" />
-        </a>
+        <MainLink content={"了解更多"} />
       </div>
     </div>
   );

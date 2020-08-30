@@ -1,8 +1,8 @@
 import React from "react";
-import style from "./navBanner.css";
+import "./NavBanner.css";
 
 const navBanner = () => {
-  return <div className={style.nav_banner}></div>;
+  return <div id="nav-banner"></div>;
 };
 
 export default navBanner;

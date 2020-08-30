@@ -1,25 +1,39 @@
 import React from "react";
-import style from "./SideNavigation.css";
+import "./SideNavigation.css";
 import closeWhite from "../../images/icon/关闭-white.svg";
 import logoWhite from "../../images/logo/mainpage.svg";
+import data from "./SideNavigationData.js";
+import SideNavMainLink from "../SideNavMainLink/SideNavMainLink";
 
 const sideNavigation = () => {
   return (
-    <div className={style.side_navigation}>
-      <div className={style.side_navigation_wrap}>
+    <div id="side-navigation">
+      <div id="side-navigation-wrap">
         <div className="container">
-          <div className={style.side_main_page_container}>
-            <button className={style.side_nav_icon_close}>
+          <div id="side-main-page-container">
+            <button id="side-nav-icon-close">
               <img className="img-show" src={closeWhite} />
             </button>
-            <div className={style.side_logo_container}>
+            <div id="side-logo-container">
               <img className="img-show" src={logoWhite} />
             </div>
           </div>
         </div>
-        <div className={`${style.side_nav_top_line} line`}></div>
+        <div id="side-nav-top-line" className="line"></div>
         <div className="container">
-          <ul className={style.side_nav_links}></ul>
+          <ul id="side-nav-links">
+            {data.map((item) => {
+              return (
+                <SideNavMainLink
+                  key={item.title}
+                  title={item.title}
+                  imgShow={item.imgShow}
+                  imgNone={item.imgNone}
+                  content={item.content}
+                />
+              );
+            })}
+          </ul>
         </div>
       </div>
     </div>

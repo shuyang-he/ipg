@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../../images/icon/箭头.svg";
+import MainLink from "../MainLink/MainLink";
 
 const aboutUs = () => {
   return (
@@ -17,10 +17,7 @@ const aboutUs = () => {
           </p>
         </div>
         <div>
-          <a className="main-link">
-            <p className="g-font g-t4 g-t-dark-black">了解更多</p>
-            <img src={arrow} />
-          </a>
+          <MainLink content={"了解更多"} />
         </div>
       </div>
     </div>

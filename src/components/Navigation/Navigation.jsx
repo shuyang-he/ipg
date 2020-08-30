@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import style from "./Navigation.css";
+import "./Navigation.css";
 import menuWhite from "../../images/icon/menu-white.svg";
 import menuBlack from "../../images/icon/menu-black.svg";
 import logoWhite from "../../images/logo/mainpage.svg";
@@ -9,27 +9,39 @@ import wechatWhite from "../../images/icon/微信icon.svg";
 import wechatBlack from "../../images/icon/weixin.svg";
 import linkedinWhite from "../../images/icon/领英icon.svg";
 import linkedinBlack from "../../images/icon/LINKEDIN.svg";
+import data from "./NavigationData.js";
+import NavLink from "../NavLink/NavLink";
 
 const navigation = () => {
   return (
-    <div className={style.navigation}>
+    <div id="navigation">
       <div className="container">
-        <div className={style.navigation_wrap}>
-          <button className={style.nav_icon_open}>
+        <div id="navigation-wrap">
+          <button id="nav-icon-open">
             <img className="img-show" src={menuWhite} />
             <img className="img-none" src={menuBlack} />
           </button>
-          <div className={style.main_page_conainer}>
+          <div id="main-page-container">
             <img className="img-show" src={logoWhite} />
             <img className="img-none" src={logoBlack} />
           </div>
-          <ul className={style.nav_links}></ul>
-          <div className={style.nav_addition}>
-            <a className={style.wechat}>
+          <ul id="nav-links">
+            {data.map((item) => {
+              return (
+                <NavLink
+                  key={item.title}
+                  title={item.title}
+                  content={item.content}
+                />
+              );
+            })}
+          </ul>
+          <div id="nav-addition">
+            <a id="wechat">
               <img className="img-show" src={wechatWhite} />
               <img className="img-none" src={wechatBlack} />
             </a>
-            <a className={style.linkedin}>
+            <a id="linkedin">
               <img className="img-show" src={linkedinWhite} />
               <img className="img-none" src={linkedinBlack} />
             </a>

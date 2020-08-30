@@ -1,4 +1,5 @@
 import React from "react";
+import MainLink from "../MainLink/MainLink";
 
 const topBanner1 = () => {
   return (
@@ -15,10 +16,7 @@ const topBanner1 = () => {
           Global Integrated Talent Solution Provider
         </p>
         <div>
-          <a className="main-link">
-            <p className="g-font g-t4 g-t-white">联系我们</p>
-            <img src="./images/icon/箭头.svg" />
-          </a>
+          <MainLink content={"联系我们"} />
         </div>
       </div>
     </div>

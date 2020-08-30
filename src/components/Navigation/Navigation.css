@@ -1,11 +1,11 @@
-.navigation {
+#navigation {
   width: 100%;
   height: 83px;
   position: fixed;
   z-index: 9;
 }
 
-.navigation_wrap {
+#navigation-wrap {
   width: 100%;
   height: 83px;
   display: flex;
@@ -13,31 +13,55 @@
   align-items: center;
 }
 
-.nav_icon_open {
+#nav-icon-open {
   display: none;
   width: 25px;
   height: 25px;
   background-color: transparent;
 }
 
-.nav_icon_open > img {
+#nav-icon-open > img {
   width: 25px;
   height: 25px;
 }
 
-.main_page_container {
+#main-page-container {
   display: flex;
   justify-self: center;
   align-items: center;
   margin-right: 25px;
 }
 
-.main_page_container img {
+#main-page-container img {
   width: 105px;
   height: 45px;
 }
 
-.nav_addition {
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-self: stretch;
+}
+
+#nav-links > li {
+  position: relative;
+  margin-right: 25px;
+}
+
+#nav-links > li > a {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+#nav-links > li > a:hover {
+  color: #4272d7 !important;
+  border-bottom: #4272d7 solid 8px;
+  border-top: transparent solid 8px;
+}
+
+#nav-addition {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -45,28 +69,16 @@
   flex-grow: 1;
 }
 
-.nav_addition a {
+#nav-addition a {
   width: 24px;
   height: 24px;
 }
 
-.nav_addition img {
+#nav-addition img {
   width: 24px;
   height: 24px;
 }
 
-.wechat {
+#wechat {
   margin-right: 25px;
-}
-
-.nav_links > li > a {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-}
-
-.nav_links > li > a:hover {
-  color: #4272d7 !important;
-  border-bottom: #4272d7 solid 8px;
-  border-top: transparent solid 8px;
 }

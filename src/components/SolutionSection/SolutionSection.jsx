@@ -1,50 +1,26 @@
 import React from "react";
+import TurnPage from "../TurnPage/TurnPage";
+import SolutionItem from "../SolutionItem/SolutionItem";
+import prev from "../../images/icon/滑动左.svg";
+import next from "../../images/icon/滑动右.svg";
+import data from "./SolutionSectionData.js";
 
 const solutionSection = () => {
   return (
     <div id="solution-section" className="container">
-      <div className="turn-page">
-        <a>
-          <img src="./images/icon/滑动左.svg" />
-        </a>
-      </div>
+      <TurnPage img={prev} />
       <div id="solution-content" className="row">
-        <div className="col-12 col-lg-4">
-          <div id="solution-flexible-con" className="solution-section-image">
-            <a id="solution-flexible">
-              <div className="solution-section-image-bottom">
-                <img src="./images/icon/灵活用工.svg" />
-                <span className="g-font g-t3 g-t-white">灵活用工</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col-12 col-lg-4">
-          <div id="solution-talent-con" className="solution-section-image">
-            <a id="solution-talent">
-              <div className="solution-section-image-bottom">
-                <img src="./images/icon/高端人才寻访.svg" />
-                <span className="g-font g-t3 g-t-white">高端人才寻访</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col-12 col-lg-4">
-          <div id="solution-vendor-con" className="solution-section-image">
-            <a id="solution-vendor">
-              <div className="solution-section-image-bottom">
-                <img src="./images/icon/招聘流程外包.svg" />
-                <span className="g-font g-t3 g-t-white">招聘流程外包</span>
-              </div>
-            </a>
-          </div>
-        </div>
+        {data.map((item) => {
+          return (
+            <SolutionItem
+              key={item.img}
+              img={item.img}
+              content={item.content}
+            />
+          );
+        })}
       </div>
-      <div className="turn-page">
-        <a>
-          <img src="./images/icon/滑动右.svg" />
-        </a>
-      </div>
+      <TurnPage img={next} />
     </div>
   );
 };
