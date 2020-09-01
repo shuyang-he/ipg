@@ -15,6 +15,7 @@ const solutionSection = () => {
           return (
             <SolutionItem
               key={item.img}
+              bgimg={item.bgimg}
               img={item.img}
               content={item.content}
             />

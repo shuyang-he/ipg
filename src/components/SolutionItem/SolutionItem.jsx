@@ -1,10 +1,14 @@
 import React from "react";
 import "./SolutionItem.css";
 
-const solutionItem = ({ img, content }) => {
+const solutionItem = async ({ bgimg, img, content }) => {
+  const backgroundImage = await import(bgimg);
   return (
     <div className="col-12 col-lg-4">
-      <div className="solution-section-image">
+      <div
+        className="solution-section-image"
+        style={{ backgroundImage: "url(" + backgroundImage + ")" }}
+      >
         <a>
           <div className="solution-section-image-bottom">
             <img src={img} />
