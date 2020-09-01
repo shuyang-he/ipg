@@ -1,5 +1,6 @@
 import React from "react";
 import messageBoard from "../MessageBoard/MessageBoard";
+import "./MessageBoardItem.css";
 
 const messageBoardItem = ({ img }) => {
   return (

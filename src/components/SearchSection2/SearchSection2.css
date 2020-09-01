@@ -1,0 +1,13 @@
+#search-section-item-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#jobs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-basis: 80%;
+}

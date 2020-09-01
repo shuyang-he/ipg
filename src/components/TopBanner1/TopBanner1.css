@@ -1,0 +1,22 @@
+#top-board {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: linear-gradient(
+    110deg,
+    #0a1b2b 1%,
+    #0b2142 53%,
+    #0c2552 74%,
+    #0d2d6f 90%,
+    #0e3693 98%
+  );
+}
+
+#top-board-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  margin-top: 83px;
+  margin-bottom: 83px;
+}

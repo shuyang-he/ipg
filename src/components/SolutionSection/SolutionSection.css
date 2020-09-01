@@ -1,0 +1,14 @@
+#solution-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#solution-content {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 80%;
+  justify-content: space-between;
+  align-items: center;
+}

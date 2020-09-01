@@ -1,0 +1,9 @@
+#about-us-image {
+  display: flex;
+  justify-content: center;
+}
+
+#about-us-image > img {
+  max-width: 100%;
+  height: auto;
+}

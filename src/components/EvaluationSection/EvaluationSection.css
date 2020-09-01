@@ -1,0 +1,44 @@
+#evaluation-section {
+  max-width: 830px;
+  height: 313px;
+  background-image: url("../../images/background/客户好评背景图.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+#evaluation-section a {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+#evaluation-content {
+  width: 570px;
+  height: 230px;
+  opacity: 0.92;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#evaluation-content p {
+  text-align: center;
+}
+
+#evaluation-content > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#evaluation-content > p:nth-child(3) {
+  font-family: Roboto;
+}

@@ -1,0 +1,18 @@
+.footer-subtitle {
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item-content > p {
+  margin-bottom: 10px;
+}

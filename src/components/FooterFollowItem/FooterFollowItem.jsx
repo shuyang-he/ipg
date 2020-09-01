@@ -1,4 +1,5 @@
 import React from "react";
+import "./FooterFollowItem.css";
 
 const footerFollowItem = ({ img }) => {
   return (

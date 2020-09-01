@@ -3,6 +3,7 @@ import FooterFollowItem from "../FooterFollowItem/FooterFollowItem";
 import logo from "../../images/logo/mainpage.png";
 import data from "./FooterData.js";
 import FooterItem from "../FooterItem/FooterItem";
+import "./Footer.css";
 
 const footer = () => {
   return (

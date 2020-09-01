@@ -1,4 +1,5 @@
 import React from "react";
+import "./TeamItem.css";
 
 const teamItem = ({ title, content }) => {
   return (

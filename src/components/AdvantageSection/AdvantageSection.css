@@ -1,0 +1,10 @@
+#advantage-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.advantage-item-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

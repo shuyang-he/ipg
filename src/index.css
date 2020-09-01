@@ -1,0 +1,117 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  font-family: PingFangSC;
+  height: 100vh;
+  overflow: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.line {
+  width: 100%;
+  border-top: #000000 solid 1px;
+}
+
+#navigation-wrap .active img.img-show {
+  display: none;
+}
+
+#navigation-wrap .active img.img-none {
+  display: block;
+}
+
+#side-nav-links div.active img.img-show {
+  display: none;
+}
+
+#side-nav-links div.active img.img-none {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  #nav-links {
+    display: none;
+  }
+
+  #nav-addition {
+    display: none;
+  }
+
+  #nav-icon-open {
+    display: flex;
+  }
+
+  #main-page-container {
+    justify-content: center;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #team-content::before {
+    height: 81%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-section {
+    height: 45px;
+  }
+
+  #search-section-item-2 {
+    display: none;
+  }
+
+  #main-content-2 {
+    height: 400px;
+  }
+
+  .main-content-2-items:nth-child(3) {
+    border-left: none;
+  }
+
+  #footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer-follow {
+    align-items: stretch;
+  }
+
+  #footer-follow > p:nth-child(1) {
+    text-align: center;
+  }
+
+  .footer-follow-item {
+    margin: 0px;
+  }
+
+  .footer-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  #team-content::before {
+    height: 81%;
+  }
+
+  #message-board {
+    display: none;
+  }
+}

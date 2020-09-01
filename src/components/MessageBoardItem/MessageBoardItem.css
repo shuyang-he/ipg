@@ -1,0 +1,24 @@
+.message-board-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.message-board-item:nth-child(2) {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.message-board-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.message-board-item img {
+  width: 24px;
+  height: 24px;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import searchIcon from "../../images/icon/搜索.svg";
 import closeIcon from "../../images/icon/x.svg";
+import "./SearchSection1.css";
 
 class SearchSectionItem1 extends Component {
   constructor(props) {

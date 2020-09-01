@@ -1,13 +1,3 @@
-.side-nav-link {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.side-nav-link:nth-child(7) > div {
-  border-bottom: none;
-}
-
 .side-main-link-container {
   height: 37.5px;
   display: flex;
@@ -41,14 +31,4 @@
   display: flex;
   align-items: stretch;
   border-bottom: #ffffff solid 0.5px;
-}
-
-.side-nav-drop-link {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-}
-
-.side-nav-drop-link:hover {
-  color: #ffffff;
 }

@@ -1,0 +1,18 @@
+.achievement-item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 33px;
+}
+
+.achievement-item > img {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+.achievement-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

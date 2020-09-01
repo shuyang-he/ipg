@@ -1,4 +1,5 @@
 import React from "react";
+import "./ClientItem.css";
 
 const clientItem = ({ icon }) => {
   return (

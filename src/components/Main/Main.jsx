@@ -1,8 +1,4 @@
 import React from "react";
-import MessageBoard from "../MessageBoard/MessageBoard";
-import Contact from "../Contact/Contact";
-import Message from "../Message/Message";
-import Search from "../Search/Search";
 import MainContent1 from "../MainContent1/MainContent1";
 import MainContent2 from "../MainContent2/MainContent2";
 import AboutUsCon from "../AboutUsCon/AboutUsCon";
@@ -22,11 +18,6 @@ import ComplimentSection from "../ComplimentSection/ComplimentSection";
 const main = () => {
   return (
     <>
-      <MessageBoard />
-      <Contact />
-      <Message />
-      <Search />
-      <TopBoardCon />
       <MainContent1 />
       <Line />
       <MainContent2 />

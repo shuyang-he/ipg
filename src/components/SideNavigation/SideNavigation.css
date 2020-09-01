@@ -69,11 +69,3 @@
 #side-nav-links > li:nth-child(7) > div {
   border-bottom: none;
 }
-
-#side-nav-addition {
-  display: flex;
-  flex-direction: row;
-  flex-basis: 10%;
-  justify-content: space-around;
-  align-items: center;
-}

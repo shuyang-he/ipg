@@ -1,0 +1,21 @@
+#contact {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  z-index: 8;
+  width: 170px;
+  height: 220px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  top: 30%;
+  right: 71px;
+}
+
+#contact > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 65%;
+}

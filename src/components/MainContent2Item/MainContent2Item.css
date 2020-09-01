@@ -1,0 +1,24 @@
+.main-content-2-items {
+  height: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: solid 0.8px #000000;
+}
+
+.main-content-2-items:nth-child(1) {
+  border-left: none;
+}
+
+.main-content-2-items > p:nth-child(1) {
+  font-family: TimesNewRomanPS-MT;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #4272d7;
+}
+
+.main-content-2-items > p:nth-child(2) {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+#solution-flexible-con {
+  background-image: url("../../images/background/背景-灵活用工.png");
+}
+
+#solution-talent-con {
+  background-image: url("../../images/background/背景-高端人才寻访.png");
+}
+
+#solution-vendor-con {
+  background-image: url("../../images/background/背景招聘流程外包.png");
+}
+
+.solution-section-image {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  align-items: stretch;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.solution-section-image a {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.solution-section-image-bottom {
+  opacity: 0.88;
+  background-color: #061520;
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.solution-section-image-bottom > img {
+  margin-left: 16px;
+  margin-right: 16px;
+}

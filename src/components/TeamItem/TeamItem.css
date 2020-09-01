@@ -1,0 +1,24 @@
+.team-item {
+  position: relative;
+  display: flex;
+  flex-basis: 25%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: solid 1px #e6e6e5;
+  margin-bottom: 20px;
+}
+
+.team-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -17px;
+  height: 5px;
+  width: 5px;
+  background-color: #1f40e6;
+}
+
+.team-item p {
+  margin-bottom: 20px;
+}

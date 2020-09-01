@@ -1,4 +1,5 @@
 import React from "react";
+import "./ComplimentItem.css";
 
 const complimentItem = ({ img, title, content }) => {
   return (

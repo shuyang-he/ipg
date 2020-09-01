@@ -6,11 +6,10 @@ import TopBanner1 from "../TopBanner1/TopBanner1";
 export default () => {
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
+      spaceBetween={0}
+      slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
         <TopBanner1 />

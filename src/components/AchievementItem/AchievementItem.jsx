@@ -1,5 +1,6 @@
 import React from "react";
 import icon from "../../images/icon/骄人成绩icon.svg";
+import "./AchievementItem.css";
 
 const achievementItem = ({ title, content }) => {
   return (

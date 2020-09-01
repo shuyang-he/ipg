@@ -1,4 +1,5 @@
 import React from "react";
+import "./DatabaseItem.css";
 
 const databaseItem = ({ img, title }) => {
   return (

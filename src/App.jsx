@@ -5,7 +5,12 @@ import Navigation from "./components/Navigation/Navigation";
 import NavBanner from "./components/NavBanner/NavBanner";
 import SideNavigation from "./components/SideNavigation/SideNavigation";
 import Footer from "./components/Footer/Footer";
+import TopBannerCon from "./components/TopBannerCon/TopBannerCon";
 import Main from "./components/Main/Main";
+import MessageBoard from "./components/MessageBoard/MessageBoard";
+import Contact from "./components/Contact/Contact";
+import Message from "./components/Message/Message";
+import Search from "./components/Search/Search";
 
 class App extends Component {
   render() {
@@ -14,9 +19,16 @@ class App extends Component {
         <Navigation />
         <NavBanner />
         <SideNavigation />
+        <TopBannerCon />
         <Switch>
           <Route path="/">
-            <Main />
+            <MessageBoard />
+            <Contact />
+            <Message />
+            <Search />
+            <div className="container">
+              <Main />
+            </div>
           </Route>
           <Route path="*">{/* <NotFound /> */}</Route>
         </Switch>

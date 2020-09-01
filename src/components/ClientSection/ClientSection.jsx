@@ -4,12 +4,10 @@ import imgs from "./ClientSectionData.js";
 
 const ClientSection = () => {
   return (
-    <div className="container">
-      <div className="row">
-        {imgs.map((img) => {
-          return <ClientItem key={img} icon={img} />;
-        })}
-      </div>
+    <div className="row">
+      {imgs.map((img) => {
+        return <ClientItem key={img} icon={img} />;
+      })}
     </div>
   );
 };

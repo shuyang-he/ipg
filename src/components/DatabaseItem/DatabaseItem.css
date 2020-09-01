@@ -1,0 +1,23 @@
+.database-item-con {
+  display: flex;
+  align-items: stretch;
+}
+
+.database-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.database-item > div {
+  display: flex;
+  align-items: center;
+}
+
+.database-item img {
+  max-width: 100%;
+  height: auto;
+}

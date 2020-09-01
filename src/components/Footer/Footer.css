@@ -1,0 +1,43 @@
+#footer {
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../images/background/footer背景.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 38px;
+}
+
+#footer-logo {
+  height: 43px;
+  margin-bottom: 6px;
+}
+
+#footer-logo > img {
+  width: 100px;
+  height: 43px;
+}
+
+.footer-line {
+  border: solid 1px #ffffff;
+}
+
+#footer-content {
+  padding: 20px;
+}
+
+#footer-follow {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-follow-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

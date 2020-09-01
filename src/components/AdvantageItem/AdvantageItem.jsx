@@ -1,4 +1,5 @@
 import React from "react";
+import "./AdvantageItem.css";
 
 const advantageItem = ({ icon, title, content }) => {
   return (

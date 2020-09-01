@@ -1,4 +1,5 @@
 import React from "react";
+import "./SolutionItem.css";
 
 const solutionItem = ({ img, content }) => {
   return (
