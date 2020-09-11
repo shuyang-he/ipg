@@ -1,5 +1,5 @@
 #message {
-  display: none;
+  display: flex;
   position: fixed;
   flex-direction: column;
   justify-content: space-evenly;

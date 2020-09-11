@@ -3,6 +3,7 @@
   height: 83px;
   position: fixed;
   z-index: 9;
+  background-color: var(--nav-bg-color);
 }
 
 #navigation-wrap {
@@ -17,7 +18,7 @@
   display: none;
   width: 25px;
   height: 25px;
-  background-color: transparent;
+  background-color: var(--nav-bg-color);
 }
 
 #nav-icon-open > img {
@@ -53,10 +54,11 @@
   display: flex;
   align-items: center;
   align-self: stretch;
+  color: var(--nav-link-color);
 }
 
 #nav-links > li > a:hover {
-  color: #4272d7 !important;
+  color: #4272d7;
   border-bottom: #4272d7 solid 8px;
   border-top: transparent solid 8px;
 }
@@ -81,4 +83,10 @@
 
 #wechat {
   margin-right: 25px;
+}
+
+.nav-scrolled {
+  --nav-link-color: #505050;
+  --nav-bg-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }

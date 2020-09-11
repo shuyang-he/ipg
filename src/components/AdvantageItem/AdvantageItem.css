@@ -34,4 +34,5 @@
 
 .advantage-subtitle p {
   border-bottom: solid 1px #1f40e6;
+  white-space: pre-line;
 }

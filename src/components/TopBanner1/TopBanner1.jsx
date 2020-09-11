@@ -7,10 +7,10 @@ const topBanner1 = () => {
   return (
     <div id="top-board" className="swiper-slide">
       <div id="top-board-content" className="container">
-        <p className="g-font g-t1 g-t-white">{data.title}</p>
-        <p className="g-font g-t3 g-t-white">{data.content}</p>
+        <p className="g-font g-t1 g-t-white">{data.title}</p>;
+        <p className="g-font g-t3 g-t-white">{data.content}</p>;
         <div>
-          <MainLink content={data.link} />
+          <MainLink color="g-t-white" content={data.link} />
         </div>
       </div>
     </div>

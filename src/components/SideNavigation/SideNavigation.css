@@ -15,7 +15,7 @@
   );
   top: 0px;
   right: 0px;
-  display: none;
+  display: flex;
   flex-direction: column;
   z-index: 9;
 }

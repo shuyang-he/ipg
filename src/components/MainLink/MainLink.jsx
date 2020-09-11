@@ -1,11 +1,11 @@
 import React from "react";
-import img from "../../images/icon/箭头.svg";
+import data from "./MainLinkData.js";
 
-const mainLink = ({ content }) => {
+const mainLink = ({ content, color }) => {
   return (
     <a className="main-link">
-      <p className="g-font g-t4 g-t-dark-black">{content}</p>
-      <img src={img} />
+      <p className={`g-font g-t4 ${color}`}>{content}</p>
+      <img src={data.img} />
     </a>
   );
 };

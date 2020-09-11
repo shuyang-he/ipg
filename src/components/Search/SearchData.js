@@ -1,4 +1,6 @@
 const data = {
+  searchIcon: "images/icon/搜索.svg",
+  closeIcon: "images/icon/x.svg",
   title: "热门职位",
   content: [
     "财务总监",

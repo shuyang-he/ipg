@@ -1,10 +1,11 @@
 const data = {
+  logo: "images/logo/mainpage.png",
   footerFollowItem: {
     imgs: [
-      "../../images/icon/微信icon.svg",
-      "../../images/icon/微博icon.svg",
-      "../../images/icon/领英icon.svg",
-      "../../images/icon/facebookicon.svg",
+      "images/icon/微信icon.svg",
+      "images/icon/微博icon.svg",
+      "images/icon/领英icon.svg",
+      "images/icon/facebookicon.svg",
     ],
   },
   footerItem: [

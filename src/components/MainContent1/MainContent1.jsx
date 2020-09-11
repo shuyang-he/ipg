@@ -8,7 +8,7 @@ const mainContent1 = () => {
     <div id="main-content-1">
       <p className="g-font g-t2 g-t-dark-black">{data.content}</p>
       <div>
-        <MainLink content={data.link} />
+        <MainLink color="g-t-dark-black" content={data.link} />
       </div>
     </div>
   );

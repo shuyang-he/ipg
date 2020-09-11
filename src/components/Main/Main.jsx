@@ -2,7 +2,6 @@ import React from "react";
 import MainContent1 from "../MainContent1/MainContent1";
 import MainContent2 from "../MainContent2/MainContent2";
 import AboutUsCon from "../AboutUsCon/AboutUsCon";
-import AboutUs from "../AboutUs/AboutUs";
 import TopBoardCon from "../TopBannerCon/TopBannerCon";
 import SolutionSection from "../SolutionSection/SolutionSection";
 import MainTitleCon from "../MainTitleCon/MainTitleCon";
@@ -22,7 +21,6 @@ const main = () => {
       <Line />
       <MainContent2 />
       <AboutUsCon />
-      <AboutUs />
       <MainTitleCon title={"解决方案"} />
       <SolutionSection />
       <Line />

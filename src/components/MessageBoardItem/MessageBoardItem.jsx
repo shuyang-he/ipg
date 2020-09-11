@@ -3,9 +3,8 @@ import messageBoard from "../MessageBoard/MessageBoard";
 import "./MessageBoardItem.css";
 
 const messageBoardItem = ({ img }) => {
-  console.log(img);
   return (
-    <li className="message-board-item" id="message-board-phone">
+    <li className="message-board-item">
       <a>
         <img src={img} />
       </a>

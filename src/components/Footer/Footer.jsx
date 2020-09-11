@@ -1,6 +1,5 @@
 import React from "react";
 import FooterFollowItem from "../FooterFollowItem/FooterFollowItem";
-import logo from "../../images/logo/mainpage.png";
 import data from "./FooterData.js";
 import FooterItem from "../FooterItem/FooterItem";
 import "./Footer.css";
@@ -10,7 +9,7 @@ const footer = () => {
     <div id="footer">
       <div className="container">
         <div id="footer-logo">
-          <img src={logo} />
+          <img src={data.logo} />
         </div>
       </div>
       <div className="line footer-line container"></div>

@@ -1,11 +1,14 @@
 .nav-drop {
   position: absolute;
   width: 135px;
+  height: 0px;
   background-color: #152b4c;
   top: 83px;
   left: -50%;
-  display: none;
+  display: flex;
   flex-direction: column;
+  overflow-y: hidden;
+  transition: 0.3s ease;
 }
 
 .nav-drop > li {
@@ -16,4 +19,26 @@
 
 .nav-drop-link:hover {
   color: #4272d7;
+}
+
+.nav-drop-list-enter {
+  transform: translateY(-3%);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.nav-drop-list-enter.nav-drop-list-enter-active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.nav-drop-list-leave {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.nav-drop-list-leave.nav-drop-list-leave-active {
+  transform: translateY(-3%);
+  opacity: 0;
 }

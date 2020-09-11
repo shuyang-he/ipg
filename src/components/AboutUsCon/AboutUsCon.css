@@ -1,9 +1,35 @@
 #about-us-image {
   display: flex;
   justify-content: center;
+  position: relative;
+  margin-bottom: 250px;
 }
 
 #about-us-image > img {
   max-width: 100%;
   height: auto;
+}
+
+#about-us {
+  max-width: 570px;
+  height: 255px;
+  margin: auto;
+  padding: 30px;
+  position: absolute;
+  top: 255px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px 0;
+  background-color: #ffffff;
+}
+
+#about-us > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  flex-basis: 40%;
 }

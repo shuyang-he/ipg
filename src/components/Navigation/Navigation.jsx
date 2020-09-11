@@ -1,35 +1,48 @@
 import React from "react";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import "./Navigation.css";
-import menuWhite from "../../images/icon/menu-white.svg";
-import menuBlack from "../../images/icon/menu-black.svg";
-import logoWhite from "../../images/logo/mainpage.svg";
-import logoBlack from "../../images/logo/subpage.svg";
-import wechatWhite from "../../images/icon/微信icon.svg";
-import wechatBlack from "../../images/icon/weixin.svg";
-import linkedinWhite from "../../images/icon/领英icon.svg";
-import linkedinBlack from "../../images/icon/LINKEDIN.svg";
+import "./Navigation.scss";
 import data from "./NavigationData.js";
 import NavLink from "../NavLink/NavLink";
+import { showSideNav } from "../../actions/SideNavDisplay";
 
-const navigation = () => {
-  return (
-    <div id="navigation">
+const navigation = ({
+  dropDisplay,
+  navStyleChange,
+  sideNavDisplay,
+  showSideNav,
+}) => {
+  const nav = (
+    <div id="navigation" className={navStyleChange ? "nav-scrolled" : ""}>
       <div className="container">
         <div id="navigation-wrap">
-          <button id="nav-icon-open">
-            <img className="img-show" src={menuWhite} />
-            <img className="img-none" src={menuBlack} />
+          <button id="nav-icon-open" onClick={showSideNav}>
+            <img
+              className={navStyleChange ? "img-none" : "img-show"}
+              src={data.menuWhite}
+            />
+            <img
+              className={navStyleChange ? "img-show" : "img-none"}
+              src={data.menuBlack}
+            />
           </button>
           <div id="main-page-container">
-            <img className="img-show" src={logoWhite} />
-            <img className="img-none" src={logoBlack} />
+            <img
+              className={navStyleChange ? "img-none" : "img-show"}
+              src={data.logoWhite}
+            />
+            <img
+              className={navStyleChange ? "img-show" : "img-none"}
+              src={data.logoBlack}
+            />
           </div>
           <ul id="nav-links">
-            {data.map((item) => {
+            {dropDisplay.map((item, index) => {
               return (
                 <NavLink
-                  key={item.title}
+                  key={index}
+                  index={index}
+                  show={item.showDrop}
                   title={item.title}
                   content={item.content}
                 />
@@ -38,18 +51,51 @@ const navigation = () => {
           </ul>
           <div id="nav-addition">
             <a id="wechat">
-              <img className="img-show" src={wechatWhite} />
-              <img className="img-none" src={wechatBlack} />
+              <img
+                className={navStyleChange ? "img-none" : "img-show"}
+                src={data.wechatWhite}
+              />
+              <img
+                className={navStyleChange ? "img-show" : "img-none"}
+                src={data.wechatBlack}
+              />
             </a>
             <a id="linkedin">
-              <img className="img-show" src={linkedinWhite} />
-              <img className="img-none" src={linkedinBlack} />
+              <img
+                className={navStyleChange ? "img-none" : "img-show"}
+                src={data.linkedinWhite}
+              />
+              <img
+                className={navStyleChange ? "img-show" : "img-none"}
+                src={data.linkedinBlack}
+              />
             </a>
           </div>
         </div>
       </div>
     </div>
   );
+  if (sideNavDisplay) {
+    return null;
+  } else {
+    return nav;
+  }
 };
 
-export default navigation;
+const mapStateToProps = (state) => {
+  return {
+    dropDisplay: state.navDropDisplay,
+    navStyleChange: state.navStyleChange,
+    sideNavDisplay: state.sideNavDisplay,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    showSideNav: () => {
+      dispatch(showSideNav());
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(navigation);

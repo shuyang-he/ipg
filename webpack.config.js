@@ -34,7 +34,11 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"],
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+          outputPath: "images/background",
+        },
       },
       {
         test: /\.s[ac]ss$/i,
@@ -58,7 +62,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "./src/images"),
-          to: path.resolve(__dirname, "./public"),
+          to: path.resolve(__dirname, "./public/images"),
         },
       ],
     }),

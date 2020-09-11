@@ -20,3 +20,7 @@
   margin-top: 83px;
   margin-bottom: 83px;
 }
+
+#top-board-content > p {
+  white-space: pre-line;
+}

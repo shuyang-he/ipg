@@ -1,11 +1,7 @@
 import React from "react";
 
 const line = () => {
-  return (
-    <div className="contianer">
-      <div className="line"></div>
-    </div>
-  );
+  return <div className="line"></div>;
 };
 
 export default line;

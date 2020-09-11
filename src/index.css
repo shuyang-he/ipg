@@ -9,6 +9,11 @@ body {
   overflow: auto;
 }
 
+:root {
+  --nav-bg-color: transparent;
+  --nav-link-color: #ffffff;
+}
+
 #root {
   display: flex;
   flex-direction: column;

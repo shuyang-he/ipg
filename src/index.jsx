@@ -9,9 +9,7 @@ import "./index.css";
 try {
   ReactDOM.render(
     <Provider store={store}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <App />
     </Provider>,
     document.querySelector("#root")
   );

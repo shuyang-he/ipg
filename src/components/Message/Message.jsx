@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import "./Message.css";
 
 class Message extends Component {
@@ -18,7 +19,7 @@ class Message extends Component {
   }
 
   render() {
-    return (
+    const message = (
       <div id="message" className="container">
         <p className="g-font g-t3 g-t-dark-black">请您留言：</p>
         <form>
@@ -52,7 +53,14 @@ class Message extends Component {
         </form>
       </div>
     );
+    return this.props.display ? message : null;
   }
 }
 
-export default Message;
+const mapStateToProps = (state) => {
+  return {
+    display: state.messageDisplay,
+  };
+};
+
+export default connect(mapStateToProps)(Message);
