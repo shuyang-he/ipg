@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import "./Navigation.scss";
+import "./Navigation.css";
 import data from "./NavigationData.js";
 import NavLink from "../NavLink/NavLink";
 import { showSideNav } from "../../actions/SideNavDisplay";
