@@ -3,7 +3,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "./store/index";
 import App from "./App";
-import "./main.css";
+import "./main.scss";
 import "./index.css";
 
 try {
