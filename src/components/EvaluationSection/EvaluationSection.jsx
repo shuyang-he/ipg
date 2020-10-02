@@ -1,7 +1,7 @@
 import React from "react";
 import TurnPage from "../TurnPage/TurnPage";
 import data from "./EvaluationSectionData.js";
-import "./EvaluationSection.css";
+import "./EvaluationSection.scss";
 
 const evaluationSection = () => {
   return (
